@@ -15,6 +15,10 @@
    justify-content: space-between;
    width: 100%;
    color: white;
+   padding: 5px 250px 5px;
+}
+
+.nav-right {
 }
 
 .nav-right ul li {
@@ -108,5 +112,11 @@
    16%{
       color: #5ba2d1;
       ;
+   }
+}
+
+@media (max-width: 640px) {
+   .nav {
+      padding: 0px;
    }
 }
