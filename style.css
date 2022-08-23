@@ -8,7 +8,7 @@
    src: url(https://fontsfree.net//wp-content/fonts/basic/sans-serif/FontsFree-Net-Archive.ttf);
 }
 .nav {
-   background-color: #212224;
+   background-image: url('https://raw.githubusercontent.com/dot-event/css/HEAD/css.gif');
    position: sticky;
    display: flex;
    align-items: center;
@@ -36,26 +36,24 @@
 }
 .nav-left * {
    padding-left: 10px;
-
 }
 
 #logo {
    font-size: 20px;
 }
 .main {
-   background-color: #383a3d;
+   background-image: url('https://i.gifer.com/GVt3.gif');
+   background-size: 100%;
    display: flex;
    align-items: center;
    justify-content: center;
-   flex-direction: column;
-   
 }
 
 .main-left { 
  text-align: center;
  font-size: 30px;
- order: 1;
- color: #007ACC;
+ color: black;
+ width: 40vw;
 }
 
 .main-right { 
@@ -68,24 +66,28 @@
 }
 
 #welcome-img {
-   margin-top: 10px;
- margin-left: 10px;
- max-width: 100%;
+ margin: 20px;
  max-width: 75%;
+ border-radius: 25px;
+ border: solid white 3px;
 }
 
 #Disclaimer {
-   margin-top: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
    border: solid red;
    border-radius: 10px;
    font-size: 15px;
    color: white;
    background-color: red;
+   text-align: center;
+
 }
 
 #Information {
-   margin-top: 5px;
-   color: white;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   color: black;
    font-size: 20px;
    text-align: center;
 }
@@ -97,23 +99,62 @@
    animation-iteration-count: infinite;
 }
 
+.section2 {
+   background-color: #171717;
+   text-align: center;
+   color: white;
+}
+
 @keyframes Fumos{
    100%,0%{
-      color: #007ACC;
+      color: black;
       ;
    }
    8%{
-      color: #2888c9;
+      color: rgb(66, 66, 66);
       ;
    }
    16%{
-      color: #5ba2d1;
+      color: rgb(124, 124, 124);;
       ;
    }
 }
+.section2 img {
+   border: solid red 3px;
+   border-radius: 10px;
+   max-width: 100%;
+   max-height: 60%;
+}
+.section2-images {
+   display: flex;
+}
+
+.section2 h1 {
+   padding: 30px;
+}
 
 @media (max-width: 640px) {
+   * {
+      color: white;
+   }
+   .main-right {
+      order: -1;
+      }
+   .main-left {
+      width: auto;
+   }
    .nav {
       padding: 0px;
+   }
+   .main {
+      background-size: 300%;
+      flex-direction: column;
+   }
+   .section2-images {
+      flex-direction: column;
+   }
+   .section2-images img {
+      height: 75vw;
+      width: auto;
    }
 }
