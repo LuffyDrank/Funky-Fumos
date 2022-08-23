@@ -1,0 +1,108 @@
+* {
+   box-sizing: border-box;
+   margin: 0px;
+   font-family: 'myFirstFont', Arial, Helvetica, sans-serif;
+}
+@font-face {
+   font-family: myFirstFont;
+   src: url(https://fontsfree.net//wp-content/fonts/basic/sans-serif/FontsFree-Net-Archive.ttf);
+}
+.nav {
+   background-color: #212224;
+   position: sticky;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   color: white;
+}
+
+.nav-right ul li {
+   display: flex;
+   list-style: none;
+   display: inline;
+   padding-right: 10px;
+   
+}
+
+.nav-right ul li a {
+   color: white;
+   text-decoration: none;
+}
+
+.nav-right ul li a:hover {
+   color: red;
+}
+.nav-left * {
+   padding-left: 10px;
+
+}
+
+#logo {
+   font-size: 20px;
+}
+.main {
+   background-color: #383a3d;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   
+}
+
+.main-left { 
+ text-align: center;
+ font-size: 30px;
+ order: 1;
+ color: #007ACC;
+}
+
+.main-right { 
+   text-align: center;
+}
+
+.main-left ul {
+   list-style: none;
+   padding-left: 0px;
+}
+
+#welcome-img {
+   margin-top: 10px;
+ margin-left: 10px;
+ max-width: 100%;
+ max-width: 75%;
+}
+
+#Disclaimer {
+   font-size: 15px;
+   color: rgb(255, 118, 118);
+}
+
+#Information {
+   
+   color: white;
+   font-size: 25px;
+   text-align: center;
+}
+
+#Fumos {
+   Font-size: 60px;
+   text-decoration: underline;
+   animation: Fumos 2s linear;
+   animation-iteration-count: infinite;
+}
+
+@keyframes Fumos{
+   100%,0%{
+      color: #007ACC;
+      ;
+   }
+   8%{
+      color: #2888c9;
+      ;
+   }
+   16%{
+      color: #5ba2d1;
+      ;
+   }
+}
