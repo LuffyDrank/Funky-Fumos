@@ -179,6 +179,10 @@
 .section4-content-right a {
    text-decoration: none;
    color: white;
+
+}
+#extra {
+   display: none;
 }
 @keyframes blink{
    0% {
@@ -264,3 +268,23 @@
          ;
       }
    }
+
+   @media (min-width: 1400px) {
+      #extra {
+         display: block;
+      }
+      .section3 {
+         background-size: 100%;
+
+      }
+      .section4-content {
+         font-size: 50px;
+      }
+      .section4-content-right button {
+         font-size: 60px;
+      }
+
+      main * {
+         font-size: 150%;
+      }
+    }
