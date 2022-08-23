@@ -74,14 +74,18 @@
 }
 
 #Disclaimer {
+   margin-top: 5px;
+   border: solid red;
+   border-radius: 10px;
    font-size: 15px;
-   color: rgb(255, 118, 118);
+   color: white;
+   background-color: red;
 }
 
 #Information {
-   
+   margin-top: 5px;
    color: white;
-   font-size: 25px;
+   font-size: 20px;
    text-align: center;
 }
 
