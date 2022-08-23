@@ -100,10 +100,10 @@
    text-align: center;
 }
 
-#Fumos {
+.Fumos {
    Font-size: 60px;
    text-decoration: underline;
-   animation: Fumos 2s linear;
+   animation: blink 1.5s;
    animation-iteration-count: infinite;
 }
 
@@ -113,14 +113,20 @@
    color: white;
 }
 
+#help {
+   font-size: 10px;
+   padding-bottom: 5px;
+}
 .section2 img {
    border: solid red 3px;
    border-radius: 10px;
-   max-width: 100%;
-   max-height: 60%;
+   max-width: 400px;
+   max-height: 400px;
 }
 .section2-images {
    display: flex;
+   justify-content: space-between;
+   margin: 20px;
 }
 
 .section2 h1 {
@@ -174,18 +180,32 @@
    text-decoration: none;
    color: white;
 }
-@keyframes Fumos{
-   100%,0%{
-      color: black;
-      ;
+@keyframes blink{
+   0% {
+      color: rgb(255, 225, 225);
    }
-   8%{
-      color: rgb(66, 66, 66);
-      ;
+   15% {
+      color: rgb(255, 235, 235);
    }
-   16%{
-      color: rgb(124, 124, 124);;
-      ;
+   30% {
+      color: rgb(255, 240, 240);
+   }
+   50% {
+      color: rgb(255, 245, 245);
+   }
+   60% {
+       color: white;
+      }
+   70% {
+      color: rgb(255, 245, 245);}
+   80% {
+      color: rgb(255, 240, 240);
+      }
+   90% {
+      color: rgb(255, 235, 235);
+   }
+   100% {
+      color: rgb(255, 230, 230);
    }
 }
 
@@ -227,7 +247,9 @@
       color: white;
       padding: 40px;
       font-size: 30px;
+      text-align: center;
    }
+
    @keyframes Fumos{
       100%,0%{
          color: rgb(255, 255, 255);
