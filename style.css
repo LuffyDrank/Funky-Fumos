@@ -34,11 +34,19 @@
 .nav-right ul li a:hover {
    color: red;
 }
-.nav-left * {
+.nav-left  {
    padding-left: 10px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-#logo {
+.nav-left img {
+   display: inline;
+   width: 5vw;
+}
+
+.logo {
    font-size: 20px;
 }
 .main {
